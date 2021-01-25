@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta name="author" content="MoQ">
-        <meta name="keywords" content="Spark, Spark Studio, スパーク, スパークスタジオ, Oneplanet, one planet, AR, Augument Reality, 拡張現実">
+        <meta name="keywords" content="Spark, Spark Studio, スパーク, スパークスタジオ, Oneplanet, one planet, AR, Augument Reality, 拡張現実, AR Marketing, ARマーケティング, AR Promotion, ARプロモーション">
         <meta name="description" content="">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -22,263 +22,518 @@
         <link rel="apple-touch-icon" sizes="114x114" href="img/icon.png">
 
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/kv.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
                
-        <script src="https://kit.fontawesome.com/54d417cb89.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--HEADER-->
         <header class="header">
             <h1>spark studio スパークスタジオ</h1>
             <ul class="nav">
-                <li class="active" data-scrollTarget="#top"><a href="#top">トップ</a></li>
-                <li class="" data-scrollTarget="#service"><a href="#service">SERVICE</a></li>
-                <li class="" data-scrollTarget="#works"><a href="#works">WORKS</a></li>
-                <li class="" data-scrollTarget="#team"><a href="#team">TEAM</a></li>
-                <li class="" data-scrollTarget="#company"><a href="#company">COMPANY</a></li>
-                <li class="contact" data-scrollTarget="#contact"><a href="#contact" target="_blank">お問い合わせ</a></li>
+                <li class="active" data-scrollTarget="#top"><a href="#top">TOP</a></li>
+                <li class="" data-scrollTarget="#value"><a href="#value">VALUE</a></li>
+                <li class="" data-scrollTarget="#solution"><a href="#solution">SOLUTION</a></li>
+                <li class="" data-scrollTarget="#feature"><a href="#feature">FEATURE</a></li>
+                <li class="" data-scrollTarget="#tech"><a href="#tech">TECH</a></li>
+                <li class="" data-scrollTarget="#process"><a href="#process">PROCESS</a></li>
+                <li class="" data-scrollTarget="#book"><a href="#book">BOOK</a></li>
+                <li class="contact" data-scrollTarget="#contact"><a href="#contact" target="_blank">CONTACT</a></li>
             </ul>
         </header>
-<!--         <header class="sp_header">
-            <img class="sp_logo" src="img/logo.svg">
-            <div class="sp_menu">
-                <span class="sp_bar sp_bar1"></span>
-                <span class="sp_bar sp_bar2"></span>
-                <span class="sp_bar sp_bar3"></span>
-            </div>
-        </header> -->
-<!--         <ul class="sp_nav">
-            <li><a hret="#top">TOP</a></li>
-            <li><a hret="#news">NEWS</a></li>
-            <li><a hret="#service">SERVICE</a></li>
-            <li><a hret="#works">WORKS</a></li>
-            <li><a hret="#team">TEAM</a></li>
-            <li><a hret="#company">COMPANY</a></li>
-            <li><a hret="#contact">CONTACT</a></li>
-        </ul> -->
 
         <!--KV-->
         <div class="section-kv">
             <div id="pjs"></div>
         </div>
+
+        <!--TOP-->
         <div id="top" class="opening">
-            <img src="img/spark_logo.svg">
-            <div class="tagline">ARマーケティングソリューションズ</div>
-            <div class="scroll-down"></div>
+            <div class="inner">
+                <div class="top-text">
+                  <p class="top-tagline">ARをマーケティングに取り入れ､<br>他社との差別化を実現。</p>
+                  <img class="top-logo" src="img/spark_logo.svg">
+                  <p class="top-catchcopy">
+                    テキストや画像、動画では表現しきれない<br>仕掛けのあるオリジナルコンテンツや<br>魅力的な試着体験を提供できます。
+                  </p>
+                  <div class="top-action">
+                    <a class="btn-secondary">詳細を見る</a>
+                    <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
+                  </div>
+                </div>
+                <div class="top-phone">
+                  <div class="phone phone1">
+                    <img class="phone-cover" src="img/iphone_case.png">
+                    <div class="phone-content">
+                      <video class="phone-video" muted autoplay loop autobuffer playsinline>
+                        <source src="img/content_tbs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                  <div class="phone phone2">
+                    <img class="phone-cover" src="img/iphone_case.png">
+                    <div class="phone-content">
+                      <video class="phone-video" muted autoplay loop autobuffer playsinline>
+                        <source src="img/content_diving.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
+                <div class="scroll-down"></div>
+            </div>
         </div>
 
-        <!--NEWS-->
-<!--         <section id="news" class="section section-news">
-        </section> -->
-
-        <!--SERVICE-->
-        <section id="service" class="section section-service">
-            <img class="seciton-title title-service" src="img/title-service.svg">
-
-            <!--SPARK STUDIO-->
-            <div class="service-block sb-spark">
-                
-                <img class="logo_spark" src="img/spark_logo.svg">
-                <h3><b>spark studio</b> はAR時代の新しい体験を創り出すARコンテンツスタジオです。 高度なAR技術を扱うエンジニアや3Dクリエイター、デジタルマーケターが結集。ARに特化してコンテンツの企画・開発からプロモーションまでを一気通貫でトータルプロデュースします。
-
-                <a class="op_action" hret="http://sparkstudio.1planet.co.jp/" target="_blank">もっと見る</a>
-                </h3>
-
+        <!-- PERFORMANCE -->
+        <div id="performance" class="section section-performance">
+          <div class="numbers">
+            <div class="number-block">
+              <div class="number">100+</div>
+              <div class="num-desc">リリースしたARフィルター数</div>
             </div>
-
-            <!--CONSULTING-->
-            <div class="service-block sb-consulting">
-                <div class="title-consulting">
-                    <img class="tc-up" src="img/tc_up.svg">
-                    <img class="tc-down" src="img/tc_down.svg">
-                </div>
-                <h3>
-
-                  <b>AR技術を活用した新規サービスのご提案</b><br>
-                  テクノロジーを掛け合わせて自社のアセットを有効活用したい企業や、新しい消費者体験を導入したいストア事業者/商業施設に向けて、AR技術及びARグラスを活用したアプリケーション開発をご提供します。
-
-                <a class="op_action js_scrollTo" hret="http://sparkstudio.1planet.co.jp/" target="_blank" data-scrollTarget="#contact">無料お問い合わせ</a>
-                </h3>
-                <div class="overlay">
-                </div>
+            <div class="number-block">
+              <div class="number">1000万+</div>
+              <div class="num-desc">インプレッション数</div>
             </div>
-
-            <!--POST AR-->
-            <div class="service-block sb-postar">
-                <img class="heroimg_postar" src="img/postar_heroimg.jpg">
-                <img class="copy_postar" src="img/postar_copy.svg">
-                <h3>PostAR - ARで日本を塗り替える<br>COMING SOON...
-                </h3>
+            <div class="number-block">
+              <div class="number">100万+</div>
+              <div class="num-desc">キャプチャ数</div>
             </div>
-
-            <!--AR MARKETING LAB-->
-            <div class="service-block sb-aml">
-                <img class="logo_aml" src="img/aml_logo.svg">
-                <h3>ARを活用したマーケティングに関する<br>専門情報メディア
-                  <a class="op_action" href="https://ar-marketing.jp/" target="_blank">もっと見る</a>
-                </h3>
-            </div>
-
-            <div class="clear">
-            </div>
-
-        </section>
-
-        <!-- WORKS -->
-        <section id="works" class="section section-works">
-          <img class="seciton-title title-service" src="img/works.svg">
-          <div class="work work-domino">
-            <div class="inner">
-              <img class="work-img__domino" src="img/works_domino_main.png">
-              <div class="work-detail">
-                <h3>世界のチーズをめぐる旅へようこそ！</h3>
-                <h4>ドミノ・ピザ ジャパン様（デリバリーピザ）</h4>
-                <p>
-                  OnePlanetは2020年8月にドミノ・ピザ ジャパン様の新商品ARプロモーションの開発パートナーに採択されました。同社の新商品で使われている世界中のチーズについて、世界格好を旅しながら楽しむようなAR体験を開発させていただきました。
-                  <br><br>
-                  ドミノ・ピザ ジャパン様のような、特別なアプリを必要とせずWEBベースのARを活用したマーケティングは、これから新しい消費者体験として広がっていくと考えられます。
-                </p>
-                <p>
-                  <a class="link_normal" href="https://prtimes.jp/main/html/rd/p/000000017.000049853.html" target="_blank">プレスリリース</a>
-                  <a class="link_normal" href="work_domino.html">もっとみる</a>
-                  <br>
-                  <a class="link_cta js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
-                </p>
-              </div>
+            <div class="number-block">
+              <div class="number">150+</div>
+              <div class="num-desc">ARフィルターから生まれた投稿数</div>
             </div>
           </div>
-          <div class="work work-gymmaster">
-            <div class="inner">
-              <img class="work-img__gymmaster" src="img/works_gymmaster_v.jpg">
-              <div class="work-detail">
-                <h3>みんなでMAKE SMILE!</h3>
-                <h4>ジムマスター様（アパレル）</h4>
-                <p>
-                  「ジムマスター」は1916年に創業したカナダのファクトリーブランドです。クラシカルなスポーツウエアであるスウェットをタウンウエアとして再構築するなど、軽さや保温性、肌触りに優れたコレクションを展開することで、アウトドアフリークから絶大な支持を集めています。
-                  <br><br>
-                  今回、多くの人がキャンプやアウトドアを楽しみにしていたゴールデンウィークを目の前に外出自粛となっている状況を受け、ジムマスターからどなたでも自宅でアウトドア気分を体験できる「焚き火ARフィルター」をご提供いたします。また、自宅からショッピングを楽しみたい皆さまを応援するために、ARを使ったインスタ投稿でプレゼントが当たるキャンペーンも並行して実施いたします。詳しくはジムマスターの公式Instagramをご覧ください。 
-                </p>
-                <p>
-                  <a class="link_normal" href="work_gymmaster.html">もっとみる</a>
-                  <a class="link_cta js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="work work-kona">
-            <div class="inner">
-              <img class="work-img__kona" src="img/works_konabeer.jpg">
-              <div class="work-detail">
-                <h3>ビーチジオラマAR</h3>
-                <h4>コナビール ジャパン様（ビール）</h4>
-                <p>
-                  OnePlanetでは2020年、ハワイのの人気クラフトビール「コナビール 」のARプロモーションに採択していただきました。
-                  <br><br>
-                  コナビールを運営するKona Brewing Companyは、コナブルワリーとも呼ばれ、アメリカ合衆国ハワイ州ハワイ島のコナに本社があるビール会社です。 言わずと知れた、ハワイを代表するビールブランドですね。 1994年に設立され、1995年に初めてビールを出荷。現在はハワイ島カイルア・コナの町の海岸近くの工場に隣接してパブも経営しており、ハワイ島だけでなくオアフ島へも出荷しています。 ハワイへ行ったことがある方であれば、一度は飲んだことがあるのではないでしょうか。
-                </p>
-                <p>
-                  <a class="link_normal" href="work_gymmaster.html">もっとみる</a>
-                  <a class="link_cta js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
 
-        <!-- TEAM -->
-        <section id="team" class="section section-team">
-          <img class="seciton-title title-service" src="img/team.svg">
-          <ul class="ul-team">
-            <li class="team-murakami">
-              <div class="team-detail">
-                <p class="team-intro" href="#">
-                  <img class="logomark-small" src="img/logomark_small.svg">
-                  <br>
-                  株式会社ビズリーチにて人事部や新規事業の立ち上げに従事した後、2018年に株式会社OnePlanetを設立。前職では在籍した5年間で社員数が100人→1000人超に急成長する中で、新規事業開発/BizDev全般について幅広く経験。AR技術に特化したスタートアップであるOnePlanetでは開発以外のパートを広く担当し、様々な業界のクライアントへのAR導入を多数経験。
-                </p>
-                <div class="team-overlay"></div>
-                <div class="team-border"></div>
-              </div>
-              <div class="team-name">
-                Murakami Tomohiko
-                <br>
-                <span class="team-title">CEO</span>
-              </div>
-            </li>
-            <li class="team-ivan">
-              <div class="team-detail">
-                <p class="team-intro" href="#">
-                  <img class="logomark-small" src="img/logomark_small.svg">
-                  <br>
-                  インドネシア出身。大学在学中から、複数スタートアップの立ち上げに参画。多数サービスの立ち上げに携わり、フルスタックエンジニアとして経験を積む。2018年「THE Global Mobile Games Conference」ブロックチェーンゲーム部門で世界2位受賞。2019年、株式会社OnePlanetに参画。
-                </p>
-                <div class="team-overlay"></div>
-                <div class="team-border"></div>
-              </div>
-              <div class="team-name">
-                Ivan Stephanus
-                <br>
-                <span class="team-title">XR Engineer</span>
-              </div>
-            </li>
-            <li class="team-tokuyama">
-              <div class="team-detail">
-                <p class="team-intro" href="#">
-                  <img class="logomark-small" src="img/logomark_small.svg">
-                  <br>
-                  SIerとして16年間、金融や飲料系など様々な業務プロジェクトに参画した後、2020年に株式会社OnePlanetに入社。前職ではエンタープライズ向けWebアプリケーション開発を経験しながら、拡張現実（AR)/複合現実（MR）テクノロジーを 使った開発プロジェクトにも参画。OnePlanetではARアプリケーションの開発を担当。個人で空間コンピューティングデバイス、Magic Leapの開発やコミュニティ活動なども行っている。
-                </p>
-                <div class="team-overlay"></div>
-                <div class="team-border"></div>
-              </div>
-              <div class="team-name">
-                Sadao Tokuyama
-                <br>
-                <span class="team-title">XR Engineer</span>
-              </div>
-            </li>
-            <li class="team-joinus js_scrollTo" data-scrollTarget="#contact">
-              <img class="joinus-mark" src="img/joinus.svg">
-              <!-- <div class="team-name">
-                JOIN US
-              </div> -->
-            </li>
-          </ul>
-          <div class="clear"></div>
-        </section>
-
-        <!-- COMPANY -->
-        <section id="company" class="section section-company">
+        <!--  VALUE  -->
+        <div id="value" class="section section-value">
           <div class="inner">
-            <img class="title-company" src="img/company.svg">
-            <ul class="ul-company">
-                <li><span>社名</span>株式会社OnePlanet</li>
-                <li><span>代表</span>村上 智彦</li>
-                <li><span>設立</span>2018年6月15日</li>
-                <li><span>拠点</span>東京都渋谷区</li>
-            </ul>
+            <div class="section-title">
+                <h2>VALUE</h2>
+                <sub>spark studioの提供価値</sub>
+            </div>
+            <div class="values">
+              <div class="value-block vb1">
+                <div class="value-bg"></div>
+                <h3>ﾌﾞﾗﾝﾄﾞや自社商品の<br>こだわり / ｽﾄｰﾘｰの伝達</h3>
+                <p class="value-eng">BRAND<br>STORY</p>
+              </div>
+              <div class="value-block vb2">
+                <div class="value-bg"></div>
+                <h3>ｷｬﾗｸﾀｰやIPを生かした<br>話題喚起 / 認知拡大</h3>
+                <p class="value-eng">IP</p>
+              </div>
+              <div class="value-block vb3">
+                <div class="value-bg"></div>
+                <h3>試着ARによる購買促進</h3>
+                <p class="value-eng">TRYING ON</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOLUTION -->
+        <div id="solution" class="section section-solution">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+                <h2>SOLUTION</h2>
+                <sub>spark studioができること</sub>
+            </div>
+          </div>
+
+          <!-- World AR -->
+          <div class="sub-section">
+            <div class="inner">
+              <div class="solution-text">
+                <p class="solution-title-eng">World AR</p>
+                <h3 class="solution-title">ワールドAR</h3>
+                <p class="solution-description">
+                  パターン1: ストーリテリング<br>
+                  ブランドや自社商品のストーリーやこだわりなど、これまで視覚化できてこなかった情報をユーザーの周辺環境に3Dで視覚化させ、愛着を感じるストーリーテリングを提供します。
+                </p>
+                <p class="solution-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                </p>
+              </div>
+              <div class="solution-phone">
+                <img class="phone-cover" src="img/iphone_case.png">
+                <div class="phone-content">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- World AR -->
+          <div class="sub-section colored">
+            <div class="inner">
+              <div class="solution-text">
+                <p class="solution-title-eng">World AR</p>
+                <h3 class="solution-title">ワールドAR</h3>
+                <p class="solution-description">フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明</p>
+                <p class="solution-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                </p>
+              </div>
+              <div class="solution-phone">
+                <img class="phone-cover" src="img/iphone_case.png">
+                <div class="phone-content">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portal -->
+          <div class="sub-section">
+            <div class="inner">
+              <div class="solution-text">
+                <p class="solution-title-eng">Portal</p>
+                <h3 class="solution-title">ポータル</h3>
+                <p class="solution-description">ポータル空間にどこでもドアのような窓や扉を出現させて、どこへでも好きな場所へとユーザーをトリップさせるAR。自宅に居てもあらゆる場所に実際に行ったかのような体験を提供することができます。
+                </p>
+                <p class="solution-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                </p>
+              </div>
+              <div class="solution-phone">
+                <img class="phone-cover" src="img/iphone_case.png">
+                <video class="phone-content content-portal" muted autoplay loop autobuffer playsinline>
+                  <source src="img/content_portal.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <!-- <div class="phone-content">
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+
+          <div class="sub-section colored">
+            <div class="inner">
+              <div class="solution-text">
+                <p class="solution-title-eng">World AR</p>
+                <h3 class="solution-title">ワールドAR</h3>
+                <p class="solution-description">フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明</p>
+                <p class="solution-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                </p>
+              </div>
+              <div class="solution-phone">
+                <img class="phone-cover" src="img/iphone_case.png">
+                <div class="phone-content">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Face Filter -->
+          <div class="sub-section">
+            <div class="inner">
+              <div class="solution-text">
+                <p class="solution-title-eng">Face Filter</p>
+                <h3 class="solution-title">フェイスフィルター</h3>
+                <p class="solution-description">フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明フェイスフィルターの説明</p>
+                <p class="solution-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">このようなARを作りたい！</a>
+                </p>
+              </div>
+              <div class="solution-phone">
+                <img class="phone-cover" src="img/iphone_case.png">
+                <div class="phone-content">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- FEATURE  -->
+        <section id="feature" class="section section-feature">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+              <h2>FEATURE</h2>
+              <sub>spark studioの圧倒的な強み</sub>
+            </div>
+            <div class="section-content">
+              <div class="feature-block">
+                <img src="img/feature1.png" />
+                <h4>最先端のAR技術</h4>
+                <p>3Dやアニメーション、様々なエフェクト、インタラクションなど高度な情報を空間に表現するARに専門特化した先端技術チーム</p>
+              </div>
+              <div class="feature-block">
+                <img src="img/feature2.png" />
+                <h4>空間時代の3Dクリエイティブ</h4>
+                <p>現実世界に3Dが当たり前に存在する次の社会で求められる、これまでとは異なる「空間クリエイティブ」を追求する3Dクリエイティブ/デザイナーチーム</p>
+              </div>
+              <div class="feature-block">
+                <img src="img/feature3.png" />
+                <h4>体験型広告の高い投資対効果</h4>
+                <p>ARは広告を避ける多くの人々にも好意的に拡散。ARに特化した技術チームとノウハウを持ったデジタルマーケターが連携し、高い成果を実現。効果分析レポートも提出します</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TECH  -->
+        <section id="tech" class="section section-tech">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+                <h2>AR TECHNOLOGY</h2>
+                <sub>spark studioがカバーするARテクノロジーの広さ</sub>
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="inner">
+              <div class="tech-text">
+                <h3 class="tech-title">Web AR</h3>
+                <p class="tech-description">
+                  WebARはWEBブラウザ上で利用できるARです。アプリのインストールを必要としないため、利用者数を最大化できます。
+                  <br>
+                  WebサイトへARを組み込み実物大の3Dオブジェクトを配置できる試着ARは、ユーザーの来店を必要とせずにECサイトの販売促進を実現します。
+                  <br>
+                  また、QRコードからダイレクトに印象的なオリジナルコンテンツへと誘導するARは、イベント・展示会でのリッチな体験の提供、カタログ・名刺の3D化など幅広い用途でご活用いただけます。
+                </p>
+                <p class="tech-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
+                </p>
+              </div>
+              <img class="tech-illust1" src="img/tech1.png">
+              <img class="tech-bg1" src="img/pattern1.svg">
+            </div>
+          </div>
+
+          <div class="sub-section reversed">
+            <div class="inner">
+              <div class="tech-text">
+                <h3 class="tech-title">アプリ & ARグラス</h3>
+                <p class="tech-description">
+                  自社専用の高度なARアプリやARグラスを活用したアプリケーションの開発・提供をしています。
+                  <br>
+                  高度な技術を要する特別なデジタル体験は、ユーザーに驚きや感動を与えることができます。
+                  <br>
+                  また、デジタル化が求められる企業のアセットを活用したR&Dを先端テクノロジーで加速させます。
+                  <br>
+                  DXに関心のあるパートナー企業を常に募集しているので、まずはお気軽にお問い合わせください。様々なDXの事例をご紹介いたします。
+
+                </p>
+                <p class="tech-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
+                </p>
+              </div>
+              <div class="tech-illust2">
+                <div class="tech-phone tech-phone1">
+                    <img class="tech-phone-cover" src="img/iphone_case_small.png">
+                    <img class="tech-phone-gif" src="img/tech21.gif">
+                </div>
+                <div class="tech-phone tech-phone2">
+                    <img class="tech-phone-cover" src="img/iphone_case_small.png">
+                    <img class="tech-phone-gif" src="img/tech22.gif">
+                </div>
+                <div class="tech-phone tech-phone3">
+                    <img class="tech-phone-cover" src="img/iphone_case_small.png">
+                    <img class="tech-phone-gif" src="img/tech23.gif">
+                </div>
+              </div>
+              <img class="tech-bg2" src="img/pattern2.svg">
+            </div>
+          </div>
+
+          <div class="sub-section">
+            <div class="inner">
+              <div class="tech-text">
+                <h3 class="tech-title">アプリ & ARグラス</h3>
+                <p class="tech-description">
+                  自社専用の高度なARアプリやARグラスを活用したアプリケーションの開発・提供をしています。
+                  <br>
+                  高度な技術を要する特別なデジタル体験は、ユーザーに驚きや感動を与えることができます。
+                  <br>
+                  また、デジタル化が求められる企業のアセットを活用したR&Dを先端テクノロジーで加速させます。
+                  <br>
+                  DXに関心のあるパートナー企業を常に募集しているので、まずはお気軽にお問い合わせください。様々なDXの事例をご紹介いたします。
+
+                </p>
+                <p class="tech-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
+                </p>
+              </div>
+              <img class="tech-illust3" src="img/tech3.png">
+              <!-- <img class="tech-bg1" src="img/pattern1.svg"> -->
+            </div>
+          </div>
+
+        </section>
+
+        <!-- PROCESS  -->
+        <section id="process" class="section section-process">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+                <h2>PROCESS</h2>
+                <sub>spark studioをご利用の流れ</sub>
+            </div>
+            <div class="section-content">
+              <div class="process-block">
+                <img src="img/process1.svg" />
+                <h4>企画</h4>
+                <p>ARを導入することが目的にならないよう、どのような課題に向けたAR導入を行いたいかヒアリングをし、課題解決に最適なARの企画、予算、スケジュールをご提案します。</p>
+                <img class="process-arrow" src="img/arrow.svg">
+              </div>
+              <div class="process-block">
+                <img src="img/process2.svg" />
+                <h4>設計</h4>
+                <p>単にARを導入するのではなく導入後のユーザー体験、印刷物のAR対応、現場のオペレーション、他のプロモーション施策との連動など、AR周辺部分も配慮した全体設計をします。</p>
+                <img class="process-arrow" src="img/arrow.svg">
+              </div>
+              <div class="process-block">
+                <img src="img/process3.svg" />
+                <h4>制作・開発</h4>
+                <p>完成イメージとして静止画ベースのラフを作成し、その確認後にAR開発に入ります。ARフィルター完成後にも公開前に確認をしていただき、最終調整をします。</p>
+                <img class="process-arrow" src="img/arrow.svg">
+              </div>
+              <div class="process-block">
+                <img src="img/process4.svg" />
+                <h4>レポート</h4>
+                <p>ARは広告を避ける多くの人々にも好意的に拡散。ARに特化した技術チームとノウハウを持ったデジタルマーケターが連携し、高い成果を実現。効果分析レポートも提出します</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BOOK  -->
+        <section id="book" class="section section-book">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+                <h2>BOOK</h2>
+                <sub>spark studio発ーーARマーケティングガイドブック</sub>
+            </div>
+            <div class="section-content">
+              <img class="book-img" src="img/book.png">
+              <div class="book-text">
+                <p>
+                  実際に体験すると一気に理解が深まる「ARマーケティング」の魅力をまずは体験してみませんか？
+                  <br><br>
+                  お問い合わせフォームに「資料請求」と書き添えて、無料のガイドブックをGETしてください。
+                </p>
+                <p class="book-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">資料請求</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section-contact">
+          <div class="inner">
+            <div class="divider">
+            </div>
+            <div class="section-title">
+                <h2>CONTACT</h2>
+                <sub>お問い合わせ</sub>
+            </div>
+            <form id="op_form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+              <input type=hidden name="oid" value="00D5h000000IiDd">
+              <input type=hidden name="retURL" value="https://1planet.co.jp/thanks.html">
+              <input type=hidden name='captcha_settings' value='{"keyname":"recapcha","fallback":"true","orgId":"00D5h000000IiDd","ts":""}'>
+              <!--  ----------------------------------------------------------------------  -->
+              <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+              <!--  <input type="hidden" name="debug" value=1>                              -->
+              <!--  <input type="hidden" name="debugEmail"                                  -->
+              <!--  value="shinjisogawa@gmail.com">                                         -->
+              <!--  ----------------------------------------------------------------------  -->
+              <div class="input-group half left">
+                <label for="last_name">お名前*</label>
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="お名前" />
+              </div>
+
+              <div class="input-group half">
+                <label for="company_type">企業種別*</label>
+                <select id="company_type" name="company_type" type="text" placeholder="企業種別">
+                  <option>未選択...</option>
+                  <option>ARを導入したい企業・ブランド</option>
+                  <option>代理店</option>
+                  <option>クリエイター</option>
+                  <option>その他</option>
+                </select>
+              </div>
+
+              <div class="input-group clear">
+                <label for="company_name">企業名*</label>
+                <input id="company_name" maxlength="80" name="company_name" size="20" type="text" placeholder="企業名" />
+              </div>
+
+              <div class="input-group half left">
+                <label for="email">メールアドレス*</label>
+                <input id="email" maxlength="80" name="email" size="20" type="text" placeholder="メールアドレス" />
+              </div>
+
+              <div class="input-group half">
+                <label for="telephone">電話番号*</label>
+                <input id="telephone" maxlength="80" name="telephone" size="20" type="text" placeholder="電話番号" />
+              </div>
+
+              <div class="input-group clear">
+                <label for="description">お問い合わせ内容*</label>
+                <textarea id="description" type="text" name="description" rows="8"  placeholder="ARの企画・開発に関するご相談はこちらからお願いいたします。その他、株式会社OnePlanetへご質問・ご要望がございましたら、お気軽にご連絡ください。"></textarea>
+              </div>
+
+              <input type="hidden" name="lead_source" value="CorporateSite"/>
+              ​<input type="hidden" name="Campaign_ID" value="7015h000000xF3aAAE" />
+              <input type="hidden" name="member_status" value="Responded" />
+
+              <p class="checkbox">
+                <input type="checkbox" id="agreed" name="checked" text="abc" />
+                <label for="agreed">ご提供頂く<a href="https://1planet.co.jp/policy.html" target="_blank">個人情報の取り扱い方針</a>に同意する</label>
+              </p><br>
+              <div class="g-recaptcha" data-callback="clearcall" data-sitekey="6LcL9xIaAAAAACMVvZZc4fRuJWoZ6ZGCI5qCmQwJ"></div>
+              <p id="recaptcha-warning">REcaptcha 効いてなさそう。。。削除しません？？送信するにはチェックを入れてください。</p><br>
+              <input id="submit" type="submit" name="submit" class="btn-primary" value="送信する">
+            </form>
           </div>
         </section>
 
         <!-- FOOTER -->
-        <footer class="op_footer">
-          <p class="op_copyright">© 2020 One Planet Inc. All rights reserved.</p>
-          <a class="op_pp">Privacy Policy</a>
-        </footer>
+        <section class="end">
+          <img class="sp_logo" src="img/spark_logo.svg">
+          <footer class="sp_footer">
+            <p class="sp_copyright">powered by <a href="https://1planet.co.jp/" target="_blank"><img class="op_logo" src="img/op_logo.svg"></a></p>
+          </footer>
+        </section>
+        
         
     </body>
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/scrollspy.js"></script>
     <script>
     $(document).ready(function(){
-        if(window.location.hash) {
-            console.log(11111);
-        }
 
         $(".nav").scrollspy({ offset: 80, animate: true });
 
@@ -299,30 +554,7 @@
             }, 800, 'swing', function () {
                 window.location.hash = targetEle;
             });
-        });
-
-        // Opening
-        setTimeout(function(){
-            $('.opening-stroke').fadeOut(1000);
-            $('.kvbg').removeClass('close');
-        },2500);
-        setTimeout(function(){
-            $('.header').removeClass('out');
-        },3000);
-        setTimeout(function(){
-            $('.opening').addClass('show-tagline');
-        },4000);
-        
-        
-        // DEBUG: Skip Opening
-        function skipOpening(){
-            $('.opening-stroke').remove();
-            $('.kvbg').removeClass('close');
-            $('.header').removeClass('out');
-            $('.opening').addClass('show-tagline');
-        }
-        skipOpening();
-        
+        });        
 
         // Particle
         particlesJS('pjs',
@@ -330,7 +562,7 @@
           {
             "particles": {
               "number": {
-                "value": 120,
+                "value": 100,
                 "density": {
                   "enable": true,
                   "value_area": 800
@@ -355,7 +587,7 @@
                 }
               },
               "opacity": {
-                "value": 0.5,
+                "value": 0.4,
                 "random": false,
                 "anim": {
                   "enable": false,
@@ -376,14 +608,14 @@
               },
               "line_linked": {
                 "enable": true,
-                "distance": 120,
+                "distance": 100,
                 "color": "#ffffff",
                 "opacity": 0.4,
                 "width": 2
               },
               "move": {
                 "enable": true,
-                "speed": 1,
+                "speed": 0.8,
                 "direction": "none",
                 "random": true,
                 "straight": false,
@@ -446,42 +678,14 @@
           
         );
 
-        // Parallex
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            var titleOffset = scroll/10;
-            var contactOffset = scroll/15;
-            var companyBGOffset = scroll/3;
-
-            if( window.innerWidth < 1024 ) {
-                var titleOffset = scroll/25;
-                var contactOffset = scroll/35;
-                var companyBGOffset = scroll/8;
-            }
-
-            $('.title-service').css({
-                '-webkit-transform' : 'translateX(' + titleOffset + 'px)',
-                'transform'         : 'translateX(' + titleOffset + 'px)'
-            });
-
-            
-            $('.title-contact').css({
-                '-webkit-transform' : 'translateY(' + contactOffset + 'px)',
-                'transform'         : 'translateY(' + contactOffset + 'px)'
-            })
-
-            
-            $('.section-company').css({
-                'background-position' : 'center ' + companyBGOffset + 'px'
-            });
-
-            // SP Scroll Events
-            if( scroll > 350 ){
-                $('.sp_logo').addClass('show');
-            } else {
-                $('.sp_logo').removeClass('show');
-            }
+        $('.top-logo').on('inview', function(event, isInView){
+          if(isInView) {
+            $('.header').addClass('out');
+          } else {
+            $('.header').removeClass('out');
+          }
         });
+
 
         function openMenu(){
             $('.sp_menu').addClass('open');

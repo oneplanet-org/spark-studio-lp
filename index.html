@@ -54,6 +54,26 @@
             </ul>
         </header>
 
+        <!-- HEADER SP -->
+        <header class="sp_header">
+            <img class="sp_logo" src="img/spark_logo.svg">
+            <div class="sp_menu">
+                <span class="sp_bar sp_bar1"></span>
+                <span class="sp_bar sp_bar2"></span>
+                <span class="sp_bar sp_bar3"></span>
+            </div>
+        </header>
+        <ul class="sp_nav">
+            <li><a hret="#top">TOP</a></li>
+            <li><a hret="#value">VALUE</a></li>
+            <li><a hret="#solution">SOLUTION</a></li>
+            <li><a hret="#feature">FEATURE</a></li>
+            <li><a hret="#tech">TECH</a></li>
+            <li><a hret="#process">PROCESS</a></li>
+            <li><a hret="#book">BOOK</a></li>
+            <li><a hret="#contact">CONTACT</a></li>
+        </ul>
+
         <!--KV-->
         <div class="section-kv">
             <div id="pjs"></div>
@@ -69,9 +89,10 @@
                     テキストや画像、動画では表現しきれない<br>仕掛けのあるオリジナルコンテンツや<br>魅力的な試着体験を提供できます。
                   </p>
                   <div class="top-action">
-                    <a class="btn-secondary">詳細を見る</a>
+                    <a class="btn-secondary js_scrollTo" data-scrollTarget="#value">詳細を見る</a>
                     <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
                   </div>
+                  <div class="clear"></div>
                 </div>
                 <div class="top-phone">
                   <div class="phone phone1">
@@ -118,6 +139,25 @@
             </div>
           </div>
         </div>
+        <div id="performance-sp" class="section section-performance">
+            <div class="number-block-sp">
+              <div class="num-desc">リリースしたARフィルター数</div>
+              <div class="number">100+</div>
+            </div>
+            <div class="number-block-sp">
+              <div class="num-desc">インプレッション数</div>
+              <div class="number">1000万+</div>
+            </div>
+            <div class="number-block-sp">
+              <div class="num-desc">キャプチャ数</div>
+              <div class="number">100万+</div>
+            </div>
+            <div class="number-block-sp">
+              <div class="num-desc">ARフィルターから生まれた投稿数</div>
+              <div class="number">10万+</div>
+            </div>
+        </div>
+
 
         <!--  VALUE  -->
         <div id="value" class="section section-value out">
@@ -158,7 +198,7 @@
           </div>
 
           <!-- World AR -->
-          <div class="sub-section sulution-worldar">
+          <div class="sub-section sub-solution1 out">
             <div class="inner">
               <div class="solution-texts">
                 <div class="solution-text solution-text1">
@@ -223,7 +263,7 @@
           </div>
 
           <!-- Face Filter -->
-          <div class="sub-section colored">
+          <div class="sub-section colored sub-solution2 out">
             <div class="inner">
               <div class="solution-texts">
                 <div class="solution-text solution-text1">
@@ -302,7 +342,7 @@
           </div>
 
           <!-- Portal -->
-          <div class="sub-section">
+          <div class="sub-section sub-solution3 out">
             <div class="inner">
               <div class="solution-text">
                 <p class="solution-title-eng">Portal</p>
@@ -325,10 +365,10 @@
           </div>
 
           <!-- Mini AR Game -->
-          <div class="sub-section colored">
+          <div class="sub-section colored sub-solution4 out">
             <div class="inner">
               <div class="solution-texts">
-                <div class="solution-text solution-text1 ">
+                <div class="solution-text solution-text1">
                   <p class="solution-title-eng">Mini AR Game / AR Short Movie</p>
                   <h3 class="solution-title">ミニARゲーム / <br>ARショートムービー</h3>
                   <p class="solution-description">
@@ -387,7 +427,7 @@
           </div>
 
           <!-- Image Tracking -->
-          <div class="sub-section">
+          <div class="sub-section sub-solution5 out">
             <div class="inner">
               <div class="solution-text">
                 <p class="solution-title-eng">Image Tracking</p>
@@ -413,7 +453,7 @@
         </div>
 
         <!-- FEATURE -->
-        <section id="feature" class="section section-feature">
+        <section id="feature" class="section section-feature out">
           <div class="inner">
             <div class="divider">
             </div>
@@ -448,12 +488,18 @@
             </div>
             <div class="section-title">
                 <h2>AR TECHNOLOGY</h2>
-                <sub>spark studioがカバーするARテクノロジーの広さ</sub>
+                <sub>spark studioがカバーする<span class="sp-inline"><br></span>ARテクノロジーの広さ</sub>
             </div>
           </div>
 
-          <div class="sub-section">
+          <div class="sub-section sub-tech1 out">
             <div class="inner">
+              <div class="tech-illust1">
+                <video class="" muted autoplay loop autobuffer playsinline>
+                  <source src="img/tech_web.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div class="tech-text">
                 <h3 class="tech-title">Web AR</h3>
                 <p class="tech-description">
@@ -468,32 +514,12 @@
                   <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
                 </p>
               </div>
-              <div class="tech-illust1">
-                <video class="" muted autoplay loop autobuffer playsinline>
-                  <source src="img/tech_web.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
               <img class="tech-bg1" src="img/pattern1.svg">
             </div>
           </div>
 
-          <div class="sub-section reversed">
+          <div class="sub-section reversed sub-tech2 out">
             <div class="inner">
-              <div class="tech-text">
-                <h3 class="tech-title">Instagram AR</h3>
-                <p class="tech-description">
-                  Instagram上で動作するARエフェクト機能（Spark AR）です。自社製品に関連したオリジナルのARエフェクトを使えば、プロモーションや試着体験など多様なアプローチが可能です。
-                  <br>
-                  ARでどのようなことを実現したいのか丁寧にお聞きしながら、ARの開発・申請・導入後のサポート・リリース後のアクセス分析までワンストップで提供します。
-                  <br>
-                  高度な技術を要する3D・ARの制作が他社との差別化を実現します。
-                </p>
-                <p class="tech-action">
-                  <!-- <a class="btn-secondary">詳細を見る</a> -->
-                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
-                </p>
-              </div>
               <div class="tech-illust2">
                 <div class="tech-phone tech-phone1">
                     <img class="tech-phone-cover" src="img/iphone_case_small.png">
@@ -508,12 +534,27 @@
                     <img class="tech-phone-gif" src="img/tech23.gif">
                 </div>
               </div>
+              <div class="tech-text">
+                <h3 class="tech-title">Instagram AR</h3>
+                <p class="tech-description">
+                  Instagram上で動作するARエフェクト機能（Spark AR）です。自社製品に関連したオリジナルのARエフェクトを使えば、プロモーションや試着体験など多様なアプローチが可能です。
+                  <br>
+                  ARでどのようなことを実現したいのか丁寧にお聞きしながら、ARの開発・申請・導入後のサポート・リリース後のアクセス分析までワンストップで提供します。
+                  <br>
+                  高度な技術を要する3D・ARの制作が他社との差別化を実現します。
+                </p>
+                <p class="tech-action">
+                  <!-- <a class="btn-secondary">詳細を見る</a> -->
+                  <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
+                </p>
+              </div>
               <img class="tech-bg2" src="img/pattern2.svg">
             </div>
           </div>
 
-          <div class="sub-section">
+          <div class="sub-section sub-tech3 out">
             <div class="inner">
+              <img class="tech-illust3" src="img/tech3.png">
               <div class="tech-text">
                 <h3 class="tech-title">アプリ & ARグラス</h3>
                 <p class="tech-description">
@@ -531,7 +572,7 @@
                   <a class="btn-primary js_scrollTo" data-scrollTarget="#contact">お問い合わせ</a>
                 </p>
               </div>
-              <img class="tech-illust3" src="img/tech3.png">
+              
               <!-- <img class="tech-bg1" src="img/pattern1.svg"> -->
             </div>
           </div>
@@ -539,7 +580,7 @@
         </section>
 
         <!-- PROCESS  -->
-        <section id="process" class="section section-process">
+        <section id="process" class="section section-process out">
           <div class="inner">
             <div class="divider">
             </div>
@@ -576,7 +617,7 @@
         </section>
 
         <!-- BOOK  -->
-        <section id="book" class="section section-book">
+        <section id="book" class="section section-book out">
           <div class="inner">
             <div class="divider">
             </div>
@@ -628,7 +669,7 @@
               </div>
 
               <div class="input-group half">
-                <label for="company_type">企業種別*</label>
+                <label for="00N5h0000013XRT">企業種別*</label>
                 <select id="00N5h0000013XRT" name="00N5h0000013XRT" title="企業種別">
                   <option value="">-- 未選択 --</option>
                   <option value="ARを導入したい企業・ブランド">ARを導入したい企業・ブランド</option>
@@ -675,9 +716,9 @@
 
         <!-- FOOTER -->
         <section class="end">
-          <img class="sp_logo" src="img/spark_logo.svg">
-          <footer class="sp_footer">
-            <p class="sp_copyright">powered by <a href="https://1planet.co.jp/" target="_blank"><img class="op_logo" src="img/op_logo.svg"></a></p>
+          <img class="spark_logo" src="img/spark_logo.svg">
+          <footer class="spark_footer">
+            <p class="spark_copyright">powered by <a href="https://1planet.co.jp/" target="_blank"><img class="op_logo" src="img/op_logo.svg"></a></p>
           </footer>
         </section>
         

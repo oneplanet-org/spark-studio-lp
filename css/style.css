@@ -6,7 +6,7 @@ body {
 }
 a {
     text-decoration: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 source {
     border-radius: 36px;
@@ -116,6 +116,24 @@ source {
         box-shadow: 0 0 0 8px rgba(242,201,76,0);
     }
 
+}
+
+#back {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	background-image: url('data:image/svg+xml;utf8,<svg id="Capa_1" enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="%23F2C94C" d="m451.111 193.333h-322.222l112.778-112.777-48.333-48.333-193.334 193.333 193.333 193.333 48.333-48.333-112.777-112.778h322.222z"/></svg>');
+	background-position: center center;
+	background-size: 24px 24px;
+	opacity: 1;
+	background-repeat: no-repeat;
+	z-index: 10000;
+/*	background-color: rgba(255,255,255);
+	box-shadow: 4px 4px 0 rgba(235, 87, 87);*/
 }
 
 .section-kv {
@@ -359,11 +377,11 @@ source {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
-  
+
   30% {
     opacity: 1;
   }
-  
+
   100% {
     opacity: 0;
     -webkit-transform: translate(-50%, 8px);
@@ -377,11 +395,11 @@ source {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
-  
+
   30% {
     opacity: 1;
   }
-  
+
   100% {
     opacity: 0;
     -webkit-transform: translate(-50%, 8px);
@@ -516,6 +534,49 @@ source {
     text-shadow: 2px 2px rgba(242, 201, 76, 0.24);
 }
 
+/*---THANK---*/
+.thank-section{
+    padding-top: 70px;
+}
+
+.thank-texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 584px;
+}
+
+.thank-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 584px;
+    transition: all .8s;
+}
+
+.thank-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 584px;
+    transition: all .8s;
+}
+
+.thank-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.thank-description {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
 
 /*---SOLUTION---*/
 .section-title {
@@ -594,7 +655,7 @@ source {
     line-height: 1.5;
 }
 .solution-title {
-    font-size: 48px; 
+    font-size: 48px;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -1132,7 +1193,7 @@ source {
     padding: 16px;
     border: none;
     font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
-    font-weight: 600; 
+    font-weight: 600;
     resize: vertical;
 }
 .input-group {
@@ -1329,7 +1390,7 @@ source {
 
 
 @media only screen and (max-width: 1023px) {
-    .sp-inline {    
+    .sp-inline {
         display: inline;
     }
     html, body {
@@ -1339,6 +1400,16 @@ source {
         display: none;
     }
 
+    #back {
+    	width: 48px;
+    	height: 48px;
+    	background-size: 16px 16px;
+    	opacity: 1;
+    	background-color: #111;
+    	border-right: 1px solid #F2C94C;
+    	border-bottom: 1px solid #F2C94C;
+    	box-shadow: 4px 4px 0 #F2C94C;
+    }
 
     .section {
         padding-top: 20px;
@@ -1518,6 +1589,7 @@ source {
         margin-left: 16px;
         background-size: 40px;
         margin-bottom: 24px;
+        padding-bottom: 16px;
     }
     .section-title h2 {
         line-height: 1;
@@ -1537,6 +1609,37 @@ source {
     }
     .sub-section .inner {
         height: 100%;
+    }
+    #thank {
+
+    }
+    .thank-section{
+        padding-top: 70px;
+    }
+    .thank-texts {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 360px;
+        width: 100%;
+    }
+    .thank-text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        transition: all .8s;
+    }
+    .thank-title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+    .thank-description {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
     }
     #solution {
     }
@@ -1590,7 +1693,7 @@ source {
         line-height: 1.5;
     }
     .solution-title {
-        font-size: 24px; 
+        font-size: 24px;
         font-weight: bold;
         line-height: 1.5;
         margin-bottom: 16px;
@@ -2358,14 +2461,3 @@ source {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
